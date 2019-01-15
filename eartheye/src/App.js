@@ -8,7 +8,7 @@ import LandingPage from "./LandingPage";
 import Measure from "./Measure";
 import Compare from "./Compare";
 import CompareCalc from "./CompareCalc";
-
+import MeasureCalc from "./MeasureCalc";
 // Store
 
 class App extends Component {
@@ -20,6 +20,7 @@ class App extends Component {
         <Route path="/compare" component={Compare} />
         <Route path="/measure" component={Measure} />
         <Route path="/comparedcalc" component={CompareCalc} />
+        <Route path="/measuredcalc" component={MeasureCalc} />
       </Switch>
     );
   }

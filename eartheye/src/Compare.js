@@ -14,6 +14,7 @@ class Compare extends Component {
       <div>
         <div>
           <h1>Compare Page</h1>
+          <h2>Select two images to compare</h2>
           <PhotoUploadTest />
         </div>
         <div>
