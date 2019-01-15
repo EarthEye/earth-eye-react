@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
 import { NavLink } from "react-router-dom";
 
 // Components
@@ -14,7 +15,6 @@ class Compare extends Component {
         <div>
           <h1>Compare Page</h1>
           <PhotoUploadTest />
-          <PhotoUploadTest />
         </div>
         <div>
           <button onClick={() => imageStore.clearList()}>RESET</button>
@@ -27,4 +27,4 @@ class Compare extends Component {
   }
 }
 
-export default Compare;
+export default observer(Compare);
