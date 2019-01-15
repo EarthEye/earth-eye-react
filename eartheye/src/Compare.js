@@ -12,6 +12,9 @@ class Compare extends Component {
   render() {
     return (
       <div>
+        <h4 className="menu-item active">
+          <NavLink to="/home">HOME</NavLink>
+        </h4>
         <div>
           <h1>Compare Page</h1>
           <h2>Select two images to compare</h2>
