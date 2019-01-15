@@ -1,7 +1,11 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 // Components
 import PhotoUploadTest from "./PhotoUploadTest";
+
+// Stores
+import imageStore from "./stores/imageStore";
 
 class Compare extends Component {
   render() {
@@ -13,7 +17,10 @@ class Compare extends Component {
           <PhotoUploadTest />
         </div>
         <div>
-          <h1>compare button goes here</h1>
+          <button onClick={() => imageStore.clearList()}>RESET</button>
+          <h4 className="menu-item active">
+            <NavLink to="/comparedcalc">COMPARE</NavLink>
+          </h4>
         </div>
       </div>
     );

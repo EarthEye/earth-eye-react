@@ -7,6 +7,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import LandingPage from "./LandingPage";
 import Measure from "./Measure";
 import Compare from "./Compare";
+import CompareCalc from "./CompareCalc";
 
 // Store
 
@@ -14,10 +15,11 @@ class App extends Component {
   getView() {
     return (
       <Switch>
-        <Redirect exact from="/" to="/earth-eye" />
+        <Redirect exact from="/" to="/home" />
         <Route path="/home" component={LandingPage} />
         <Route path="/compare" component={Compare} />
         <Route path="/measure" component={Measure} />
+        <Route path="/comparedcalc" component={CompareCalc} />
       </Switch>
     );
   }
