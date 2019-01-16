@@ -12,7 +12,9 @@ class Measure extends Component {
     return (
       <div>
         <h4 className="menu-item active">
-          <NavLink to="/home">HOME</NavLink>
+          <button>
+            <NavLink to="/home">HOME</NavLink>
+          </button>
         </h4>
         <h1>Measure Page</h1>
         <h2>Add an image to measure</h2>

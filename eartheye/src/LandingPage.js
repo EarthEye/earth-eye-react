@@ -8,10 +8,14 @@ class LandingPage extends Component {
     return (
       <div>
         <h4 className="menu-item active">
-          <NavLink to="/compare">COMPARE</NavLink>
+          <button>
+            <NavLink to="/compare">COMPARE</NavLink>
+          </button>
         </h4>
         <h4 className="menu-item">
-          <NavLink to="/measure">MEASURE</NavLink>
+          <button>
+            <NavLink to="/measure">MEASURE</NavLink>
+          </button>
         </h4>
       </div>
     );

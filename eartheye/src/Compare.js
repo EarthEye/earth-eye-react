@@ -13,7 +13,9 @@ class Compare extends Component {
     return (
       <div>
         <h4 className="menu-item active">
-          <NavLink to="/home">HOME</NavLink>
+          <button>
+            <NavLink to="/home">HOME</NavLink>
+          </button>
         </h4>
         <div>
           <h1>Compare Page</h1>
@@ -21,9 +23,12 @@ class Compare extends Component {
           <PhotoUploadTest />
         </div>
         <div>
+          <br />
           <button onClick={() => imageStore.clearList()}>RESET</button>
           <h4 className="menu-item active">
-            <NavLink to="/comparedcalc">COMPARE</NavLink>
+            <button>
+              <NavLink to="/comparedcalc">COMPARE</NavLink>
+            </button>
           </h4>
         </div>
       </div>

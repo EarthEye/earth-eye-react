@@ -30,12 +30,14 @@ class PhotoUploadTest extends Component {
     return (
       <div>
         <div>
-          {availableButton1}
           <img className="imgPreview" src={imageStore.image1[0]} alt="" />
+          <div />
+          {availableButton1}
         </div>
         <div>
-          {availableButton2}
           <img className="imgPreview" src={imageStore.image2[0]} alt="" />
+          <div />
+          {availableButton2}
         </div>
       </div>
     );

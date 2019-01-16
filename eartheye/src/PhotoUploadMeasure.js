@@ -28,13 +28,16 @@ class PhotoUploadTest extends Component {
     return (
       <div>
         <div>
-          {availableButton1}
           <img className="imgPreview" src={imageStore.image1[0]} alt="" />
+          <div />
+          {availableButton1}
         </div>
         <div>
           <button onClick={() => imageStore.clearList()}>RESET</button>
           <h4 className="menu-item active">
-            <NavLink to="/measuredcalc">MEASURE</NavLink>
+            <button>
+              <NavLink to="/measuredcalc">MEASURE</NavLink>
+            </button>
           </h4>
         </div>
       </div>
