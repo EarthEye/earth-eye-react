@@ -1,5 +1,24 @@
-h3 {
-  margin-left: 15px;
+.lpButtons {
+  background-color: rgb(30, 135, 177);
+  border: black;
+  font-size: 18px;
+  font-style: bold;
+  color: white;
+  text-align: center;
+  margin: black;
+  text-decoration: none;
+}
+
+.Container {
+  box-sizing: border-box;
+  border: black;
+  height: 50%;
+}
+
+.h4 {
+  font-family: Georgia;
+  font-style: bold;
+  color: white;
 }
 
 .fileInput {
@@ -48,7 +67,7 @@ h3 {
   width: 500px;
 }
 
-/* body {
+body {
   font-family: Roboto, sans-serif;
   background: #f2f2f2;
   color: #757575;
@@ -78,11 +97,11 @@ h3 {
   display: flex;
   justify-content: center;
 }
-
+/* 
 .delete {
   position: relative;
   top: 16px;
-  right: 15px;
+  right: 15px; 
 }
 
 footer svg,

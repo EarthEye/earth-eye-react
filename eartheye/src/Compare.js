@@ -24,12 +24,12 @@ class Compare extends Component {
         </div>
         <div>
           <br />
-          <button onClick={() => imageStore.clearList()}>RESET</button>
-          <h4 className="menu-item active">
+          <div>
+            <button onClick={() => imageStore.clearList()}>RESET</button>{" "}
             <button>
               <NavLink to="/comparedcalc">COMPARE</NavLink>
             </button>
-          </h4>
+          </div>
         </div>
       </div>
     );

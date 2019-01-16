@@ -1,23 +1,27 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+
 // Components
 
 class LandingPage extends Component {
   render() {
     return (
-      <div>
-        <h4 className="menu-item active">
-          <button>
-            <NavLink to="/compare">COMPARE</NavLink>
-          </button>
-        </h4>
-        <h4 className="menu-item">
-          <button>
-            <NavLink to="/measure">MEASURE</NavLink>
-          </button>
-        </h4>
-      </div>
+      <>
+        <div className="row h-50">
+          <NavLink className="btn btn-primary m-auto" to="/compare">
+            COMPARE
+          </NavLink>
+        </div>
+
+        <div className="row h-50">
+          <NavLink className="btn btn-primary m-auto" to="/measure">
+            MEASURE
+          </NavLink>
+        </div>
+      </>
     );
   }
 }

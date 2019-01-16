@@ -26,10 +26,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="app" className="container-fluid">
-        <div className="row">
-          <div className="content col-10">{this.getView()}</div>
-        </div>
+      <div
+        id="app"
+        className="container-fluid text-center"
+        style={{ height: "100vh" }}
+      >
+        {this.getView()}
       </div>
     );
   }
