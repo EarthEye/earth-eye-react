@@ -22,7 +22,7 @@ class MeasureCom extends Component {
     this.measureDistances(imageStore.points);
   }
 
-  measureDistances(points) {
+  measureDistances() {
     //DISTANCE CALCULATED HERE
     let j = 1;
     for (let i = 0; i < imageStore.points.length - 1; i++) {
@@ -34,6 +34,7 @@ class MeasureCom extends Component {
         (imageStore.state.gsd * 4);
       j++;
       console.log(x);
+      imageStore.distance.push(x);
     }
   }
 
@@ -100,6 +101,7 @@ class MeasureCom extends Component {
             onLoad={this.getExif.bind(this)}
             src={imageStore.image1[0]}
             id="img1"
+            alt=""
           />
         </div>
         <Table />

@@ -4,9 +4,6 @@ import { NavLink } from "react-router-dom";
 // Components
 import PhotoUploadMeasure from "./PhotoUploadMeasure";
 
-// Store
-import imageStore from "./stores/imageStore";
-
 class Measure extends Component {
   render() {
     return (
