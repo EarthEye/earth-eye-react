@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { observer } from "mobx-react";
 import EXIF from "exif-js";
 
+// Components
+
+import Table from "./Table";
+
 // Stores
 
 import imageStore from "./stores/imageStore";
@@ -9,7 +13,6 @@ import imageStore from "./stores/imageStore";
 class MeasureCom extends Component {
   constructor(props) {
     super(props);
-
     this.setGSD = this.setGSD.bind(this);
   }
 
@@ -35,19 +38,20 @@ class MeasureCom extends Component {
   }
 
   _onMouseMove(e) {
-    this.setState({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
+    imageStore.state.x = e.nativeEvent.offsetX;
+    imageStore.state.y = e.nativeEvent.offsetY;
   }
 
   setGSD(GSD) {
-    this.setState({ gsd: GSD.toString() });
+    imageStore.state.gsd = GSD.toString();
   }
 
   setImg_w(img_w) {
-    this.setState({ img_w: img_w / 4 });
+    imageStore.state.img_w = img_w / 4;
   }
 
   setImg_h(img_h) {
-    this.setState({ img_h: img_h / 4 });
+    imageStore.state.img_h = img_h / 4;
   }
 
   getExif(e) {
@@ -98,6 +102,7 @@ class MeasureCom extends Component {
             id="img1"
           />
         </div>
+        <Table />
         {<h1>{imageStore.state.gsd}</h1>}
         <h1>
           Mouse coordinates: {x} {y}

@@ -8,6 +8,7 @@ class ImageStore {
     this.width = null;
     this.height = null;
     this.state = { x: 0, y: 0, gsd: 0, img_w: 0, img_h: 0 };
+    this.points = [];
   }
 
   addPhotoToList(file) {
@@ -32,7 +33,8 @@ decorate(ImageStore, {
   image2: observable,
   width: observable,
   height: observable,
-  state: observable
+  state: observable,
+  points: observable
 });
 
 export default new ImageStore();
