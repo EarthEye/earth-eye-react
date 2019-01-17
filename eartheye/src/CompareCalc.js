@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import { observer } from "mobx-react";
 import resemble from "resemblejs";
 
-// // //IMAGES in SRC file
-// import image1 from "./TestImages/b.png";
-// import image2 from "./TestImages/ac.png";
+// Stores
 
 import imageStore from "./stores/imageStore";
 

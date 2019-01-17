@@ -5,9 +5,9 @@ class ImageStore {
     this.list = [];
     this.image1 = [];
     this.image2 = [];
-    this.width = 0.0;
-    this.height = 0.0;
-    this.inputList = [];
+    this.width = null;
+    this.height = null;
+    this.state = { x: 0, y: 0, gsd: 0, img_w: 0, img_h: 0 };
   }
 
   addPhotoToList(file) {
@@ -17,20 +17,6 @@ class ImageStore {
       this.image2.push(file);
     }
     this.list.push(file);
-  }
-
-  removePhotoFromList(photouri) {
-    this.list = this.list.filter(listPhoto => listPhoto !== photouri);
-  }
-
-  addInputToWidth(text) {
-    this.width = text;
-    this.inputList.push(text);
-  }
-
-  addInputToHeight(text) {
-    this.height = text;
-    this.inputList.push(text);
   }
 
   clearList() {
@@ -45,7 +31,8 @@ decorate(ImageStore, {
   image1: observable,
   image2: observable,
   width: observable,
-  height: observable
+  height: observable,
+  state: observable
 });
 
 export default new ImageStore();

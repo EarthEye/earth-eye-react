@@ -1,19 +1,107 @@
 .lpButtons {
-  background-color: rgb(30, 135, 177);
+  background-color: rgb(88, 180, 216);
   border: black;
   font-size: 18px;
   font-style: bold;
+  font-family: "Raleway", sans-serif;
   color: white;
   text-align: center;
   margin: black;
   text-decoration: none;
 }
 
-.Container {
-  box-sizing: border-box;
-  border: black;
+body {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.row h-50 {
+  display: table-row;
   height: 50%;
 }
+
+.row:nth-child(1) {
+  background-color: rgb(3, 169, 199);
+}
+
+.row:nth-child(2) {
+  background-color: rgb(22, 78, 184);
+}
+
+.Comparecontainer {
+  height: 50%;
+  width: 100%;
+  background: #0f76aa;
+  overflow: visible;
+}
+
+.container-fluid text-center {
+  box-sizing: border-box;
+  border: black;
+  height: 100%;
+}
+.container {
+  height: 50%;
+  width: 100%;
+  background: #0f76aa;
+  overflow: visible;
+}
+
+.MeasurePage {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background-color: rgb(22, 78, 184);
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: Bold;
+  color: white;
+  font-size: 350%;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+/* .row h-50 {
+  height: 50%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 100px;
+ } */
+/*
+ .box {
+  width: 75%;
+  height: 50%;
+  background: blue;
+  position: relative;
+  opacity: 0.5;
+ }
+ .shape {
+  width: 75%;
+  height: 50%;
+  background: navy;
+  position: relative;
+  left: 100%;
+  opacity: 0.5;
+ }
+ 
+ #top-left {
+  width: 250px;
+  height: 250px;
+  background: purple;
+  box-sizing: border-box;
+  left: 100px;
+ } */
 
 .h4 {
   font-family: Georgia;
@@ -75,6 +163,7 @@ body {
 }
 
 .container {
+  background: rgb(10, 1, 61);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -97,38 +186,38 @@ body {
   display: flex;
   justify-content: center;
 }
-/* 
-.delete {
+/*
+ .delete {
   position: relative;
   top: 16px;
-  right: 15px; 
-}
-
-footer svg,
-.button svg,
-.delete svg {
+  right: 15px;
+ }
+ 
+ footer svg,
+ .button svg,
+ .delete svg {
   filter: drop-shadow(3px 3px 3px #999);
   transition: 0.3s;
   transform: rotate(-0.2deg);
-}
-
-footer svg:hover,
-.button svg:hover,
-.delete svg:hover {
+ }
+ 
+ footer svg:hover,
+ .button svg:hover,
+ .delete svg:hover {
   filter: drop-shadow(4px 4px 4px #999);
   transform: rotate(-0.6deg);
   cursor: pointer;
-}
-
-.delete svg {
+ }
+ 
+ .delete svg {
   filter: drop-shadow(1px 1px 1px #999);
-}
-
-footer svg {
+ }
+ 
+ footer svg {
   filter: drop-shadow(1.5px 1px 1px #999);
-}
-
-footer svg:hover,
-.delete svg:hover {
+ }
+ 
+ footer svg:hover,
+ .delete svg:hover {
   filter: drop-shadow(1.5px 1.5px 1.5px);
-} */
+ } */

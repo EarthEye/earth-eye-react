@@ -9,7 +9,7 @@ import Measure from "./Measure";
 import Compare from "./Compare";
 import CompareCalc from "./CompareCalc";
 import MeasureCalc from "./MeasureCalc";
-// Store
+import About from "./About";
 
 class App extends Component {
   getView() {
@@ -17,6 +17,7 @@ class App extends Component {
       <Switch>
         <Redirect exact from="/" to="/home" />
         <Route path="/home" component={LandingPage} />
+        <Route path="/about" component={About} />
         <Route path="/compare" component={Compare} />
         <Route path="/measure" component={Measure} />
         <Route path="/comparedcalc" component={CompareCalc} />
@@ -29,7 +30,7 @@ class App extends Component {
       <div
         id="app"
         className="container-fluid text-center"
-        style={{ height: "100vh" }}
+        style={{ height: "90vh" }}
       >
         {this.getView()}
       </div>

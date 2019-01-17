@@ -15,10 +15,14 @@ class LandingPage extends Component {
             COMPARE
           </NavLink>
         </div>
-
         <div className="row h-50">
           <NavLink className="btn btn-primary m-auto" to="/measure">
             MEASURE
+          </NavLink>
+        </div>
+        <div className="row h-10">
+          <NavLink className="btn btn-primary m-auto" to="/about">
+            ABOUT
           </NavLink>
         </div>
       </>

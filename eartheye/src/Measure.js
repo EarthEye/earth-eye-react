@@ -9,14 +9,11 @@ import imageStore from "./stores/imageStore";
 
 class Measure extends Component {
   render() {
-    console.log(imageStore.input1);
-    console.log(imageStore.input2);
-    console.log(imageStore.inputList);
     return (
       <div>
-        <button>
-          <NavLink to="/home">HOME</NavLink>
-        </button>
+        <NavLink className="btn btn-primary m-auto" to="/home">
+          HOME
+        </NavLink>
         <h1>Measure Page</h1>
         <h2>Add an image to measure</h2>
         <PhotoUploadMeasure />
